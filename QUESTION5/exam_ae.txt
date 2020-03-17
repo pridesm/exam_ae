@@ -1,5 +1,8 @@
-S -> ε
-S -> E S
+Le parser qui reconnaît la grammaire suivante reconnaît ce langage.
+Les symboles S, E, X, N0, N1, N2... sont des non-terminaux. Les symboles a, b, c... et les symboles 0, 1, 2... sont des terminaux.
+Les 1999 dernières règles suivent toujours le même schema. Il y a surement plus simple pour reconnaitre les triplet de chiffres de 000 à 999 mais normalement cette solution marche.
+
+S -> S -> E S
 X -> a | b | c | d | e | f | g | i | j | k | l | m | n | o | p | q | r | s | t | u | v | w | x | y | z | A | B | C | D | E | F | G | H | I | J | K | L | M | N | O | P | Q | R | S | T | U | V | W | X | Y | Z | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9
 E -> N0
 N0 -> 000
